@@ -21,6 +21,7 @@ let source = document.querySelector("#source")
 let scoreBoard = document.querySelector(".scoreBoard"); 
 let popup = document.querySelector(".popup"); 
 let playAgain = document.querySelector(".playAgain"); 
+let resetBoard = document.querySelector(".resetBoard"); 
 let clickBoard = document.querySelector(".clickBoard"); 
 let imgs; 
 let cardsId = []; 
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 createBoard(grid, cardArray); 
 arrangeCard();
 playAgain.addEventListener("click", replay); 
+resetBoard.addEventListener("click", replay);
 
 //add a click functions for images 
 
