@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+body {
+  background-color: #000000;
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 2rem;
+}
+h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.grid { 
+  width: 70%;
+  display: flex; 
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center; 
+  margin:-100px auto 60px auto; 
+} 
+  
+.grid img { 
+  width: 200px;
+  margin: 10px; 
+  transform-style: preserve-3d; 
+  transition: transform 0.5s; 
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom, #8e2de2, #4a00e0);
+} 
+.audio{
+  display:none
+}
+.grid img.flip { 
+  transform: rotateY(180deg); 
+} 
+  
+.popup { 
+  background: #000000cc; 
+  width: 100%; 
+  height: 100%; 
+  position: fixed;
+  z-index:20; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+}
+.popup button {
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #ffffff;
+  background: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
+  
+.data { 
+    color: #ffffff;
+  display: flex; 
+  justify-content: space-between; 
+  padding: 2rem 3rem; 
+  font-size: 2rem; 
+} 
+  
+.data span { 
+  color: rgb(206, 121, 11);
+  font-size: 2.5rem; 
+}
