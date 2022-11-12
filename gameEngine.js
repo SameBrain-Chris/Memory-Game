@@ -97,7 +97,9 @@ if (cardsSelected[0] === cardsSelected[1] && firstCard !== secondCard) {
 // alert("you have found a match"); 
  // source.src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3"
   //this below is used if you want to add sounds, you can comment it out if you dont want it
- 
+ source.src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3"
+  audio.load()
+  audio.play()
 cardsWon += 1; 
 scoreBoard.innerHTML = cardsWon; 
 setTimeout(checkWon,500) 
